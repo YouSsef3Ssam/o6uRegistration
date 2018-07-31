@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_weight="0.22"
+        android:scrollbarThumbHorizontal="@drawable/scroll"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableLayout
+
+                android:id="@+id/tAllStudent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/id"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="ID"
+                        android:textAlignment="center"
+                        android:textColor="#FFED7733"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="Name"
+                        android:textAlignment="center"
+                        android:textColor="#FFED7733"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gpa"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="GPA"
+                        android:textAlignment="center"
+                        android:textColor="#FFED7733"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/level"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:text="Level"
+                        android:textAlignment="center"
+                        android:textColor="#FFED7733"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/major"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="Major"
+                        android:textAlignment="center"
+                        android:textColor="#FFED7733"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5px"
+                        android:text="Credit Hour"
+                        android:textAlignment="center"
+                        android:textColor="#FFED7733"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10px"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+    </HorizontalScrollView>
+
+
+
+
+
+
+</LinearLayout>

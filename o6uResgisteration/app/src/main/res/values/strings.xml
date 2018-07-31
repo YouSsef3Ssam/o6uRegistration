@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">o6u Registration</string>
+    <string name="dialog">Delete</string>
+    <string name="country_prompt">Choose a type</string>
+    <string-array name="type_arrays">
+        <item>All</item>
+        <item>Name</item>
+        <item>GPA</item>
+        <item>Major</item>
+        <item>Level</item>
+        <item>Credit Hour</item>
+    </string-array>
+</resources>

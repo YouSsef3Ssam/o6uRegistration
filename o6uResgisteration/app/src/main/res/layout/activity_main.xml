@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <ImageView
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:id="@+id/imageView3"
+        android:layout_width="399dp"
+        android:layout_height="206dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/unilogoo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:inputType="textNoSuggestions"
+            android:textColor="#FFED7733"
+            android:textColorHint="#a12000"
+            android:theme="@style/MyEditTextStyle2" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textNoSuggestions|textPassword"
+            android:textColor="#FFED7733"
+            android:textColorHint="#a12000"
+            android:theme="@style/MyEditTextStyle2" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Remember Me"
+            android:textColor="#a12000"
+            />
+
+        <Button
+            android:id="@+id/bLogin"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstylepink"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+            android:onClick="signIn"
+            android:text="Log In"
+
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstylepink"
+            android:drawableRight="@drawable/icon"
+            android:onClick="adminRegistration"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="20px"
+            android:text="Admin Register"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstylepink"
+            android:drawableRight="@drawable/icon"
+            android:onClick="studentRegistration"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:text="Student Register"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</LinearLayout>

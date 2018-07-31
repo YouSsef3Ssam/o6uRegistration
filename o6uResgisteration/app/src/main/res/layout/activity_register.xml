@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+    <ImageView
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:id="@+id/imageView3"
+        android:layout_width="399dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/unilogoo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <EditText
+            android:drawableLeft="@drawable/ic_create_black_24dp"
+            android:theme="@style/MyEditTextStyle2"
+            android:id="@+id/etId"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="ID"
+            android:inputType="number"
+            android:textColor="#FFED7733"
+            android:textColorHint="#a12000" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:inputType="textNoSuggestions"
+            android:textColor="#FFED7733"
+            android:textColorHint="#a12000"
+            android:theme="@style/MyEditTextStyle2" />
+
+        <EditText
+            android:drawableLeft="@drawable/ic_create_black_24dp"
+            android:theme="@style/MyEditTextStyle2"
+            android:id="@+id/etGPA"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="GPA"
+            android:inputType="number|numberDecimal"
+            android:textColor="#FFED7733"
+            android:textColorHint="#a12000" />
+
+        <EditText
+            android:drawableLeft="@drawable/ic_create_black_24dp"
+            android:theme="@style/MyEditTextStyle2"
+            android:id="@+id/etLevel"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Level"
+            android:inputType="number"
+            android:textColor="#FFED7733"
+            android:textColorHint="#a12000" />
+
+        <EditText
+            android:drawableLeft="@drawable/ic_create_black_24dp"
+            android:theme="@style/MyEditTextStyle2"
+            android:id="@+id/etMajor"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Major"
+            android:textColor="#FFED7733"
+            android:textColorHint="#a12000"
+            android:inputType="textNoSuggestions"/>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_create_black_24dp"
+            android:theme="@style/MyEditTextStyle2"
+            android:id="@+id/etCreditHour"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Credit Hour"
+            android:inputType="number"
+            android:textColor="#FFED7733"
+            android:textColorHint="#a12000" />
+
+
+        <Button
+            android:background="@drawable/buttonstylepink"
+            android:onClick="studentRegister"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:drawableRight="@drawable/register"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
